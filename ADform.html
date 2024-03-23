@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>admission form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Admission From</header>
+      <form action="connect.php" method="post"  class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" name="fullName" required  />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" name="email"required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" name="number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" name="birthdate"required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender"value="m" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender"value="f" />
+              <label for="check-female">Female</label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address"name="address" required />
+          <input type="text" placeholder="Enter street address line 2"name="address1" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                
+                <option>India</option>
+                
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city"name="city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region"name="region" required />
+            <input type="number" placeholder="Enter postal code" name="postelcode"required />
+          </div>
+            <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Nationality</option>
+                <option>Indian</option>
+                </select>
+            </div>
+          </div>
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Religion</option>
+                <option>Hindu</option>
+                <option>Momedian</option>
+                <option>Budhhist</option>
+                </select>
+            </div>
+          </div>
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Category</option>
+                <option>General</option>
+                <option>OBC</option>
+                <option>SC</option>
+                 <option>ST</option>
+                </select>
+            </div>
+          </div>
+            
+          <div class="column">
+            <input type="text" placeholder="Enter 12th percent"name="percent" required />
+             
+             <input type="text" placeholder="Enter 10th percent" name="percent1"required />
+            
+          </div>
+          <br>
+              
+      <b> <li>01. Attach two sets of <b>attested photo copies</b>of following documents with this application form.</li></b>
+        <br>
+           
+           
+            <b> A.</b>10th Mark sheet<b>  B.</b> 12th Mark sheet<b> C.</b> Addhar Card
+             <br>
+           <b> D.</b> Domicile<b> E.</b> Caste Certificate<b> F.</b> Last Year TC
+          </center> 
+         <br>
+         <br>
+         <b> <li>02. Submit all the documents carefully to college office</b></li>
+
+        </div>
+        <button>Submit</button>
+      </form>
+      <br>
+       <a href="https://aecc.ac.in/anuradha/admission/postpg.php"target="_blank">
+             <button>More Information</button>
+         </a>
+    </section>
+      
+  </body>
+</html>
+
